@@ -1,0 +1,493 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 1em;
+  font-family: "Be Vietnam Pro", sans-serif;
+}
+
+:root {
+  --main-color: hsl(12, 88%, 59%);
+  --dark-blue: hsl(228, 39%, 23%);
+  --Dark-Grayish-Blue: hsl(227, 12%, 61%);
+  --Very-Dark-Blue: hsl(233, 12%, 13%);
+  --Very-Pale-Red: hsl(13, 100%, 96%);
+  --Vary-Light-Gray: hsl(0, 0%, 98%);
+}
+
+button,
+.btn {
+  padding: 10px 20px;
+  border-radius: 100px;
+  border: none;
+  background-color: var(--main-color);
+  color: white;
+}
+
+.f-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0px auto;
+  width: 98%;
+}
+
+body {
+  overflow-x: hidden;
+  position: relative;
+}
+
+body > .backgroundimg {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  z-index: -1;
+}
+
+body > .backgroundimg img {
+  position: absolute;
+  right: -500px;
+  top: -500px;
+  z-index: -1;
+  width: 1000px;
+}
+
+body nav {
+  z-index: 1;
+  padding: 20px 0px;
+}
+
+body nav .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body nav .container ul {
+  list-style-type: none;
+}
+
+body nav .container ul li {
+  display: inline-block;
+  margin-inline: 10px;
+}
+
+body nav .container ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+body nav .container .hamburger-icon {
+  display: none;
+}
+
+body header {
+  margin-top: 30px;
+}
+
+body header .container {
+  position: relative;
+  display: block;
+  margin: 0px auto;
+  overflow: visible;
+}
+
+body header .container .representation div {
+  width: 100%;
+}
+
+body header .container .representation div p {
+  max-width: 450px;
+  margin-bottom: 50px;
+}
+
+body header .container .representation div p span {
+  display: block;
+  font-weight: bold;
+  margin: 20px 0px;
+  font-size: 3em;
+}
+
+body header .container .representation .header-images {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+body header .container .representation .header-images svg {
+  max-width: 100%;
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+body .main-points {
+  margin-bottom: 100px;
+}
+
+body .main-points .container {
+  position: relative;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+body .main-points .container div.backgroundimg {
+  position: absolute;
+  bottom: 20%;
+  left: -50%;
+  z-index: -1;
+}
+
+body .main-points .container div.backgroundimg img {
+  position: absolute;
+}
+
+body .main-points .container .heading {
+  width: 100%;
+}
+
+body .main-points .container .heading p {
+  max-width: 450px;
+  margin-bottom: 50px;
+}
+
+body .main-points .container .heading p span {
+  display: block;
+  font-weight: bold;
+  margin: 20px 0px;
+  font-size: 3em;
+}
+
+body .main-points .container .points .point {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin: 40px 0px;
+}
+
+body .main-points .container .points .point span {
+  display: flex;
+  padding: 0px;
+  margin: 0px 0px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0px;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  margin: 0px 0px 20px;
+  font-weight: bold;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1em;
+  padding: 5px 10px;
+  font-weight: 400px;
+  padding: 0px;
+  margin: 0px;
+}
+
+body .main-points .container .points .point span span:nth-child(2) {
+  font-size: 1.3em;
+}
+
+body .main-points .container .points .point span span:nth-child(1) {
+  padding: 5px 10px;
+  margin-right: 10px;
+}
+
+body .main-points .container .points .point p {
+  margin-left: 50px;
+}
+
+body .comments-slider .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow-x: hidden;
+}
+
+body .comments-slider .container .comments-container {
+  overflow-x: scroll;
+  overflow-y: visible;
+  width: 100%;
+}
+
+body .comments-slider .container .comments-container::-webkit-scrollbar {
+  background-color: transparent;
+  width: 100%;
+  height: 10px;
+  margin-top: 10px;
+}
+
+body .comments-slider .container .comments-container::-webkit-scrollbar-thumb {
+  border-radius: 100px;
+  background-color: gray;
+}
+
+body .comments-slider .container .comments-container .comments {
+  width: 180%;
+  margin-top: 53px;
+}
+
+body .comments-slider .container > span {
+  display: block;
+  text-align: center;
+  font-size: 1.3em;
+  font-weight: bold;
+  margin: 30px 0px 80px;
+}
+
+body .comments-slider .container button {
+  margin: 100px 0px;
+}
+
+body .comments-slider .container .comments {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 180%;
+}
+
+body .comments-slider .container .comments .comment {
+  padding: 50px 30px;
+  margin-inline: 2%;
+  background-color: var(--Vary-Light-Gray);
+  position: relative;
+}
+
+body .comments-slider .container .comments .comment img {
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 100px;
+}
+
+body .comments-slider .container .comments .comment p {
+  text-align: center;
+}
+
+body .comments-slider .container .comments .comment p span {
+  display: block;
+  font-weight: bold;
+  text-align: center;
+  margin: 10px 0px;
+}
+
+body .offer {
+  background-color: var(--main-color);
+}
+
+body .offer .container {
+  position: relative;
+  overflow: hidden;
+  height: 300px;
+}
+
+body .offer .container img {
+  position: absolute;
+}
+
+body .offer .container p {
+  font-size: 3em;
+  color: white;
+  font-weight: bold;
+  width: 600px;
+}
+
+body .offer .container button {
+  background-color: white;
+  color: var(--main-color);
+}
+
+body footer {
+  background-color: var(--Very-Dark-Blue);
+  color: white;
+}
+
+body footer .container {
+  padding: 20px;
+}
+
+body footer .container div:nth-child(1) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 200px;
+}
+
+body footer .container div.list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (4)[1fr];
+      grid-template-rows: repeat(1fr, 4);
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  -webkit-column-gap: 200px;
+          column-gap: 200px;
+}
+
+body footer .container > div:last-child {
+  height: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body footer .container > div:last-child div {
+  display: block;
+}
+
+body .attribution {
+  font-size: 11px;
+  text-align: center;
+  background-color: var(--Very-Dark-Blue);
+  color: white;
+}
+
+body .attribution a {
+  color: var(--main-color);
+}
+
+@media (max-width: 768px) {
+  * {
+    border: 1px solid black;
+  }
+  .f-2 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  body nav .container ul {
+    display: none;
+  }
+  body nav .container button {
+    display: none;
+  }
+  body nav .container .hamburger-icon {
+    display: block;
+  }
+  body header .container .representation div p {
+    text-align: center;
+    max-width: 90%;
+    margin: auto;
+    margin-bottom: 45px;
+  }
+  body header .container .representation div button {
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+  body .main-points .container .heading p {
+    margin: auto;
+    margin-bottom: 50px;
+    max-width: 90%;
+  }
+  body .main-points .container .points .point > span {
+    margin-left: 10px;
+    width: 100%;
+    background-color: var(--Very-Pale-Red);
+    border-top-left-radius: 1000px;
+    border-bottom-left-radius: 1000px;
+  }
+  body .main-points .container .points .point p {
+    margin: 0px 10px;
+  }
+  body .comments-slider .container .comments-container {
+    overflow-x: scroll;
+    overflow-y: visible;
+    width: 100%;
+  }
+  body .comments-slider .container .comments-container .comments {
+    width: 320%;
+    margin-top: 53px;
+  }
+  body footer .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  body footer .container div:nth-child(1) {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    height: 150px;
+  }
+  body footer .container div {
+    margin: 10px 0px;
+  }
+  body footer .container div svg {
+    margin-left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  body footer .container div .social-media img {
+    margin-inline: 10px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
