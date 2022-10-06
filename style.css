@@ -527,6 +527,10 @@ body .attribution a {
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
   }
+  body footer .container div.list {
+    -webkit-column-gap: 60px;
+            column-gap: 60px;
+  }
   body footer .container div:nth-child(1) {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;

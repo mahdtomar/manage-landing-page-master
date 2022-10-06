@@ -435,6 +435,7 @@ body {
     }
     .offer {
       .container {
+
         height: 250px;
         p {
           width: 90%;
@@ -446,6 +447,9 @@ body {
     }
     footer {
       .container {
+        div.list{
+          column-gap: 60px;
+        }
         flex-direction: column-reverse;
         div:nth-child(1) {
           flex-direction: column-reverse;
