@@ -25,6 +25,10 @@ button,
   color: white;
 }
 
+button {
+  cursor: pointer;
+}
+
 .f-2 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -324,6 +328,7 @@ body .offer .container {
 
 body .offer .container img {
   position: absolute;
+  z-index: 1;
 }
 
 body .offer .container p {
@@ -331,11 +336,13 @@ body .offer .container p {
   color: white;
   font-weight: bold;
   width: 600px;
+  z-index: 2;
 }
 
 body .offer .container button {
   background-color: white;
   color: var(--main-color);
+  z-index: 2;
 }
 
 body footer {
@@ -361,6 +368,10 @@ body footer .container div:nth-child(1) {
   height: 200px;
 }
 
+body footer .container div:nth-child(1) .social-media img {
+  cursor: pointer;
+}
+
 body footer .container div.list {
   display: -ms-grid;
   display: grid;
@@ -371,6 +382,10 @@ body footer .container div.list {
   gap: 20px;
   -webkit-column-gap: 200px;
           column-gap: 200px;
+}
+
+body footer .container div.list p {
+  cursor: pointer;
 }
 
 body footer .container > div:last-child {
@@ -418,6 +433,9 @@ body .attribution a {
     -ms-flex-line-pack: center;
         align-content: center;
   }
+  body div.backgroundimg {
+    display: none;
+  }
   body nav {
     padding-inline: 20px;
   }
@@ -463,6 +481,9 @@ body .attribution a {
     display: block;
     margin: auto;
     margin-bottom: 20px;
+  }
+  body .main-points .container div.backgroundimg {
+    display: none;
   }
   body .main-points .container .heading p {
     margin: auto;
