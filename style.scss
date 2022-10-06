@@ -318,6 +318,9 @@ body {
   }
 }
 @media (max-width: 768px) {
+  .container{
+    width: 95%;
+  }
   // * {
   // border: 1px solid black;
   // }

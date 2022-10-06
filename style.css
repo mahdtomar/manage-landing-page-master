@@ -419,6 +419,9 @@ body .attribution a {
 }
 
 @media (max-width: 768px) {
+  .container {
+    width: 95%;
+  }
   .f-2 {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
