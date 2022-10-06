@@ -404,9 +404,6 @@ body .attribution a {
 }
 
 @media (max-width: 768px) {
-  * {
-    border: 1px solid black;
-  }
   .f-2 {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -421,14 +418,43 @@ body .attribution a {
     -ms-flex-line-pack: center;
         align-content: center;
   }
+  body nav {
+    padding-inline: 20px;
+  }
   body nav .container ul {
-    display: none;
+    display: block;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    background: gray;
+    width: 80%;
+    z-index: 989;
+    border-radius: 10px;
+    background-color: var(--Vary-Light-Gray);
+  }
+  body nav .container ul li {
+    margin: 10px auto;
+    display: block;
+    padding: 10px;
+    text-align: center;
+  }
+  body nav .container ul li a {
+    text-align: center;
   }
   body nav .container button {
     display: none;
   }
   body nav .container .hamburger-icon {
     display: block;
+  }
+  body header .container .representation .header-images svg {
+    -webkit-transform: scale(0.8) translateX(-50%);
+            transform: scale(0.8) translateX(-50%);
+    position: relative;
+    left: 43%;
+    max-width: none;
   }
   body header .container .representation div p {
     text-align: center;
@@ -464,6 +490,15 @@ body .attribution a {
   body .comments-slider .container .comments-container .comments {
     width: 320%;
     margin-top: 53px;
+  }
+  body .offer .container {
+    height: 250px;
+  }
+  body .offer .container p {
+    width: 90%;
+    margin: 0px auto 30px;
+    font-size: 2em;
+    text-align: center;
   }
   body footer .container {
     -webkit-box-orient: vertical;
